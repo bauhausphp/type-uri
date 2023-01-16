@@ -1,28 +1,23 @@
 {
-    "name": "bauhaus/uri",
+    "name": "bauhaus/type-uri",
     "description": "Yet another URI implementation",
-    "keywords": ["bauhaus", "uri", "RFC3986"],
+    "keywords": [
+        "bauhaus",
+        "type",
+        "uri"
+    ],
 
     "type": "library",
     "license": "MIT",
 
     "autoload": {
         "psr-4": {
-            "Bauhaus\\": "src/"
-        }
-    },
-
-    "autoload-dev": {
-        "psr-4": {
-            "Bauhaus\\": "tests/"
+            "Bauhaus\\Types\\": "public/",
+            "Bauhaus\\Types\\Uri\\": "private/"
         }
     },
 
     "require": {
-        "php": "^8.0"
-    },
-
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "php": "^8.2"
     }
 }
